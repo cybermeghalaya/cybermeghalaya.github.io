@@ -19,6 +19,7 @@ nav ul, ol
 nav ul
 {
     display: flex;
+    flex-wrap: wrap;
 }
 nav li 
 {
@@ -39,13 +40,19 @@ nav
     padding: 0em;
 }
 
-nav li>a 
+nav a 
+{
+    cursor: pointer;
+}
+
+nav>a, nav li>a 
 {
     padding: 0.75em 2em;
     text-decoration: none;
     color: white !important;
     display: inline-flex;
 }
+
 
 nav li>a:hover
 {
@@ -76,9 +83,7 @@ nav li>a:hover
 {
     display: flex;
     background: var(--dark-blue);
-
 }
-
 
 .logo {
     width: 100px;
@@ -140,6 +145,7 @@ footer
     text-align: center;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -148,6 +154,7 @@ footer
     display: inline-block;
     border-radius: 3px;
     margin: 20px;
+    flex-grow: 1;
 
 }
 .stats-box .figure 
@@ -161,4 +168,64 @@ footer
 {
     text-align: center;
     padding: 15px 30px;
+}
+
+#menu-toggle
+{
+    display: none;
+}
+
+
+@media screen and (max-width: 760px) {
+.logo
+{
+    width: 75px;
+}
+#banner
+{
+    padding-top:1em;
+    padding-bottom:1em;
+}
+#banner-text
+{ 
+    font-size: 16px;
+}
+
+#banner-text>div:first-child
+{
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+ nav ul
+ {
+    display: none;
+ }
+ #menu-toggle 
+    {
+        display: block;
+        width: 100%;
+    }
+  nav li, nav li a, .sub-nav > ul > li > a
+  {
+    width: 100%;
+  }
+  .sub-nav ul
+  {
+    border: none;
+    margin-left: 20px;
+  }
+  nav .sub-nav ul
+  {
+    position: relative;
+  }
+    .sub-nav:hover>ul
+    {
+        display: none;
+        background: var(--dark-blue);
+    }
+
+    nav ul.open, .sub-nav ul.open 
+    {
+        display: flex;
+    }
 }
