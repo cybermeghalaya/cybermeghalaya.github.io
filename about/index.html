@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Cyber Wing, Meghalaya Police</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/cyberstyle.css">
+    <script type="text/javascript" src="/assets/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/cyberjs.js"></script>
 </head>
 <body>
     <header>
@@ -20,43 +23,98 @@
     </div>
    <div id="mlp-logo" class="logo">
         <img src="/images/meghalaya_police_logo.png">
-        </div>
     </div>
-    <nav>
-    <a id="menu-toggle"><b>Menu</b></a>
-    <ul>
-    <li><a href="/">Home</a></li>
-    <li class="sub-nav"><a>About</a>
-        <ul>
-            <li><a href="/about">About us</a></li>
-            <li><a href="/who">Who's who</a></li>
-            <li><a href="/highlights">Highlights</a></li>
-            <li><a href="/contact">Contact</a></li>
+    </div>
+
+    <nav role="navigation">
+    <a id="menu-toggle" aria-controls="main-menu" aria-expanded="false" role="button" href="#"><b>Menu</b></a>
+    <ul id="main-menu" role="menubar">
+    <li><a href="/" role="menuitem">Home</a></li>
+    <li class="sub-nav"><a href="#" aria-haspopup="true" aria-controls="about-menu" aria-expanded="false" role="button" tabindex="0">About</a>
+        <ul id="about-menu" role="menu">
+            <li><a href="/about" role="button" tabindex="0">About us</a></li>
+            <li><a href="/who" role="button">Who's who</a></li>
+            <li><a href="/contact" role="menuitem">Contact</a></li>
         </ul>
     </li>
-    <li class="sub-nav"><a>Cyber crime</a>
-        <ul>
-            <li><a href="https://cybercrime.gov.in/">Report cyber crime</a></li>
-            <li><a href="/awareness">Awareness</a></li>
-            <li><a href="/training">Training</a></li>
+    <li class="sub-nav"><a href="#" aria-haspopup="true" aria-controls="cyber-crime-menu" aria-expanded="false" role="button" tabindex="0">Cyber crime</a>
+        <ul id="cyber-crime-menu" role="menu">
+            <li><a href="https://cybercrime.gov.in/" role="menuitem">Report cyber crime</a></li>
+            <li><a href="/awareness" role="menuitem">Awareness</a></li>
+            <li><a href="/training" role="menuitem">Training</a></li>
         </ul>
     </li>
-    <li><a href="/fact-check">Fact check</a></li>
-    <li><a href="/notice">Notice</a></li>
-    <li class="sub-nav"><a href="#">Law</a>
-        <ul>
-            <li><a href="">IT Act, 2000</a></li>
+    <li><a href="/fact-check" role="menuitem">Fact check</a></li>
+    <li><a href="/notice" role="menuitem">Notice</a></li>
+    <li class="sub-nav"><a href="#" aria-haspopup="true" aria-controls="law-menu" aria-expanded="false" role="button">Law</a>
+        <ul id="law-menu" role="menu">
+            <li><a href="" role="menuitem">IT Act, 2000</a></li>
         </ul>
     </ul>
     </nav>
+
+
     </header>
 <main>
-<h1 id="about">About</h1>
+
+<div class="breadcrumbs">
+  <ul>
+    
+    
+    
+    <li><a href="/">Home</a></li>
+    
+    
+    
+    
+    
+      
+      
+        
+          <li><i class="fa-solid fa-chevron-right divider"></i></li>
+          <li>  
+            <a href="/about/">About</a>
+          </li>
+          
+    
+    
+
+  </ul>
+</div>
+
+<div id="content">
+<h1>About</h1>
 <p>Cyber Wing is an unit of Meghalaya Police dedicated to cyber crime and cyber security.</p>
+
+<h2 id="functions-of-cyber-wing">Functions of Cyber Wing</h2>
+
+<ul>
+  <li>To investigate cyber-crime cases of general importance.</li>
+  <li>To function as Computer Emergency Response Team for Meghalaya Police.</li>
+  <li>To develop, maintain, and secure digital infrastructure of Meghalaya Police.</li>
+  <li>To impart training in cyber-crime investigation to police personnel and generate awareness among citizens.</li>
+  <li>To assist all units in the prevention and investigation of cyber-crime.</li>
+  <li>To coordinate with Indian Cyber Crime Coordination Centre (I4C), cyber-crime nodal of other states, nodal heads of intermediaries, and other such agencies.</li>
+  <li>To acquire cyber forensic capability and conduct forensic examination of digital evidence.</li>
+  <li>To undertake research and development in the field of cyber-crime investigation and digital forensics.</li>
+  <li>To implement all schemes in the domain of cyber-crime investigation and prevention.</li>
+  <li>Any other function as assigned by the Director General of Police (DGP).</li>
+</ul>
+
+</div>
+
 </main>
 <footer>
+<div class="social-links">
+Follow us: <a class="social-icon" href="https://facebook.com/cybermeghalaya/"><i class="fa-brands fa-facebook-f"></i></a><a class="social-icon" href="https://x.com/cybermeghalaya/"><i class="fa-brands fa-instagram"></i></a>
+<a class="social-icon" href="https://www.instagram.com/cybermeghalaya/"><i class="fa-brands fa-x-twitter"></i></a>
+</div>
+<p>
+Last updated: <span id="last-updated"></span>
+</p>
+<p>
 This website is designed and developed by IT Division, Cyber Wing, Meghalaya Police.
+</p>
 </footer>
-<script type="text/javascript" src="/assets/cyberjs.js"></script>
 </body>
 </html>
