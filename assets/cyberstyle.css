@@ -166,8 +166,6 @@ a:hover
     font-weight: bold;
 }
 
-
-
 main
 {
     padding: 2em;
@@ -176,7 +174,7 @@ main
     flex-direction: column;
 }
 
-#content h1 
+#content h1
 {
     font-size: 1.5em;
 }
@@ -187,7 +185,7 @@ main
     margin-top: 1.2em;
 }
 
-#content table 
+#content table
 {
     width: 100%;
     border-collapse: collapse;
@@ -481,6 +479,7 @@ img.center
 {
     background: white;
     color: var(--dark-blue);
+    text-decoration: none;
 }
 .social-icon>i 
 {
