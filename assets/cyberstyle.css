@@ -72,6 +72,10 @@ header nav>a, header nav li>a
     display: inline-flex;
 }
 
+header a:hover
+{
+    text-decoration: none;
+}
 
 header nav li>a:hover
 {
